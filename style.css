@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(17, 214, 17);
+}
+
+.left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	height: 1000px;
+	width: 1000px;
+	transform: translateY(-15%) translateX(-20%);
+	mask-image: radial-gradient(
+		circle 1000px at 100% 97%,
+		transparent 850px,
+		transparent 20px,
+		black 21px
+	);
+}
+
+.right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 75%;
+	height: 850px;
+	width: 300px;
+	background-color: white;
+	transform: rotate(25deg) translateY(25%) translateX(90%);
+}
